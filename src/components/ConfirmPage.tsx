@@ -32,7 +32,7 @@ export default function ConfirmPage() {
     navigate('/status', { state: { transactionId: dataSubmittingPayment.transactionId } })
   }, [dataSubmittingPayment, isSuccessSubmittingPayment, navigate])
 
-  function handlePay() {
+  function handlePay() { 
     if (!quote) return
 
     submitPayment({
